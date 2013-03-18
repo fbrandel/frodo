@@ -1,0 +1,11 @@
+# Your Application #
+title: Styleguide
+version: 1.0
+
+# Frodo Config #
+permalink: "posts/:title.html"
+frodo_templates: "templates"
+pygments: true
+exclude: [templates, README.md, .gitignore, .gitkeep]
+frodo_url: http://code.fbrandel.de/frodo
+frodo_version: 0.1.0
