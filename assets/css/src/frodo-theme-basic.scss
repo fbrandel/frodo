@@ -1,0 +1,86 @@
+/*
+  --------------------------------------------------------------------------
+    Frodo Theme Basic Stylesheet
+    @author Florian Brandel
+  --------------------------------------------------------------------------
+*/
+
+@import 'compass';
+@import 'cleanslate';
+@import 'variables';
+
+
+.frodo-reset {
+  @extend .cleanslate;
+}
+
+
+/*  Container
+  ----------------------------------------------------------------------- */
+
+.frodo-container {
+  background: $frodo-container-background;
+  width: $frodo-container-width;
+  margin: $frodo-container-margin;
+  padding: $frodo-container-padding;
+}
+
+/*  Navigation
+  ----------------------------------------------------------------------- */
+
+.frodo-navigation {
+  margin-bottom: 50px;
+}
+
+
+/*  Headline
+  ----------------------------------------------------------------------- */
+
+.frodo-main-headline {}
+
+/*  Post
+  ----------------------------------------------------------------------- */
+
+.frodo-post {}
+
+.frodo-post-headline {
+  &, a {
+    color: $frodo-font-color;
+  }
+}
+
+.frodo-post-content {
+  p {
+    font: $frodo-font;
+    color: $frodo-font-color;
+  }
+}
+
+/*  Colors
+  ----------------------------------------------------------------------- */
+
+.frodo-color {
+  width: 50px;
+  display: inline-block;
+}
+
+.frodo-color-swatch {
+  width: 30px;
+  height: 30px;
+}
+
+/*  Code Snippet
+  ----------------------------------------------------------------------- */
+
+.frodo-snippet {
+  margin-bottom: 40px;
+}
+
+.frodo-snippet-example {
+  padding: 5px 0 15px 0;
+}
+
+.frodo-snippet-code {
+  background: #eee;
+  padding: 15px;
+}

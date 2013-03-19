@@ -1,0 +1,359 @@
+/*
+  --------------------------------------------------------------------------
+    Frodo Theme Basic Stylesheet
+    @author Florian Brandel
+  --------------------------------------------------------------------------
+*/
+/*
+* CleanSlate
+*   github.com/premasagar/cleanslate
+*
+*/
+  /*
+    An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+    by Premasagar Rose
+        dharmafly.com
+
+    license
+        opensource.org/licenses/mit-license.php
+
+    **
+        
+    v0.9.2
+        
+*/
+/* == BLANKET RESET RULES == */
+/* HTML 4.01 */
+/* line 26, src/_cleanslate.scss */
+.cleanslate, .frodo-reset, .cleanslate h1, .frodo-reset h1, .cleanslate h2, .frodo-reset h2, .cleanslate h3, .frodo-reset h3, .cleanslate h4, .frodo-reset h4, .cleanslate h5, .frodo-reset h5, .cleanslate h6, .frodo-reset h6, .cleanslate p, .frodo-reset p, .cleanslate td, .frodo-reset td, .cleanslate dl, .frodo-reset dl, .cleanslate tr, .frodo-reset tr, .cleanslate dt, .frodo-reset dt, .cleanslate ol, .frodo-reset ol, .cleanslate form, .frodo-reset form, .cleanslate select, .frodo-reset select, .cleanslate option, .frodo-reset option, .cleanslate pre, .frodo-reset pre, .cleanslate div, .frodo-reset div, .cleanslate table, .frodo-reset table, .cleanslate th, .frodo-reset th, .cleanslate tbody, .frodo-reset tbody, .cleanslate tfoot, .frodo-reset tfoot, .cleanslate caption, .frodo-reset caption, .cleanslate thead, .frodo-reset thead, .cleanslate ul, .frodo-reset ul, .cleanslate li, .frodo-reset li, .cleanslate address, .frodo-reset address, .cleanslate blockquote, .frodo-reset blockquote, .cleanslate dd, .frodo-reset dd, .cleanslate fieldset, .frodo-reset fieldset, .cleanslate li, .frodo-reset li, .cleanslate iframe, .frodo-reset iframe, .cleanslate strong, .frodo-reset strong, .cleanslate legend, .frodo-reset legend, .cleanslate em, .frodo-reset em, .cleanslate s, .frodo-reset s, .cleanslate cite, .frodo-reset cite, .cleanslate span, .frodo-reset span, .cleanslate input, .frodo-reset input, .cleanslate sup, .frodo-reset sup, .cleanslate label, .frodo-reset label, .cleanslate dfn, .frodo-reset dfn, .cleanslate object, .frodo-reset object, .cleanslate big, .frodo-reset big, .cleanslate q, .frodo-reset q, .cleanslate font, .frodo-reset font, .cleanslate samp, .frodo-reset samp, .cleanslate acronym, .frodo-reset acronym, .cleanslate small, .frodo-reset small, .cleanslate img, .frodo-reset img, .cleanslate strike, .frodo-reset strike, .cleanslate code, .frodo-reset code, .cleanslate sub, .frodo-reset sub, .cleanslate ins, .frodo-reset ins, .cleanslate textarea, .frodo-reset textarea, .cleanslate var, .frodo-reset var, .cleanslate a, .frodo-reset a, .cleanslate abbr, .frodo-reset abbr, .cleanslate applet, .frodo-reset applet, .cleanslate del, .frodo-reset del, .cleanslate kbd, .frodo-reset kbd, .cleanslate tt, .frodo-reset tt, .cleanslate b, .frodo-reset b, .cleanslate i, .frodo-reset i, .cleanslate hr, .frodo-reset hr,
+.cleanslate article,
+.frodo-reset article, .cleanslate aside, .frodo-reset aside, .cleanslate dialog, .frodo-reset dialog, .cleanslate figure, .frodo-reset figure, .cleanslate footer, .frodo-reset footer, .cleanslate header, .frodo-reset header, .cleanslate hgroup, .frodo-reset hgroup, .cleanslate menu, .frodo-reset menu, .cleanslate nav, .frodo-reset nav, .cleanslate section, .frodo-reset section, .cleanslate time, .frodo-reset time, .cleanslate mark, .frodo-reset mark, .cleanslate audio, .frodo-reset audio, .cleanslate video, .frodo-reset video {
+  background-attachment: scroll !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  border-color: black !important;
+  border-color: currentColor !important;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0 !important;
+  border-style: none !important;
+  border-width: medium !important;
+  bottom: auto !important;
+  clear: none !important;
+  clip: auto !important;
+  color: inherit !important;
+  counter-increment: none !important;
+  counter-reset: none !important;
+  cursor: auto !important;
+  direction: inherit !important;
+  display: inline !important;
+  float: none !important;
+  font-family: inherit !important;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit !important;
+  font-style: inherit !important;
+  font-variant: normal !important;
+  font-weight: inherit !important;
+  height: auto !important;
+  left: auto !important;
+  letter-spacing: normal !important;
+  line-height: inherit !important;
+  list-style-type: inherit !important;
+  /* Could set list-style-type to none */
+  list-style-position: outside !important;
+  list-style-image: none !important;
+  margin: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  opacity: 1;
+  outline: invert none medium !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  position: static !important;
+  quotes: "" "" !important;
+  right: auto !important;
+  table-layout: auto !important;
+  text-align: inherit !important;
+  text-decoration: inherit !important;
+  text-indent: 0 !important;
+  text-transform: none !important;
+  top: auto !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: inherit !important;
+  white-space: normal !important;
+  width: auto !important;
+  word-spacing: normal !important;
+  z-index: auto !important;
+  /* Proprietary and draft rules */
+  /* This section needs extending */
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  text-shadow: none !important;
+}
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine (TODO: rigorously verify this) */
+/* HTML 4.01 */
+/* line 100, src/_cleanslate.scss */
+.cleanslate, .frodo-reset, .cleanslate h3, .frodo-reset h3, .cleanslate h5, .frodo-reset h5, .cleanslate p, .frodo-reset p, .cleanslate h1, .frodo-reset h1, .cleanslate dl, .frodo-reset dl, .cleanslate dt, .frodo-reset dt, .cleanslate h6, .frodo-reset h6, .cleanslate ol, .frodo-reset ol, .cleanslate form, .frodo-reset form, .cleanslate select, .frodo-reset select, .cleanslate option, .frodo-reset option, .cleanslate pre, .frodo-reset pre, .cleanslate div, .frodo-reset div, .cleanslate h2, .frodo-reset h2, .cleanslate caption, .frodo-reset caption, .cleanslate h4, .frodo-reset h4, .cleanslate ul, .frodo-reset ul, .cleanslate address, .frodo-reset address, .cleanslate blockquote, .frodo-reset blockquote, .cleanslate dd, .frodo-reset dd, .cleanslate fieldset, .frodo-reset fieldset, .cleanslate textarea, .frodo-reset textarea, .cleanslate hr, .frodo-reset hr,
+.cleanslate article,
+.frodo-reset article, .cleanslate aside, .frodo-reset aside, .cleanslate dialog, .frodo-reset dialog, .cleanslate figure, .frodo-reset figure, .cleanslate footer, .frodo-reset footer, .cleanslate header, .frodo-reset header, .cleanslate hgroup, .frodo-reset hgroup, .cleanslate menu, .frodo-reset menu, .cleanslate nav, .frodo-reset nav, .cleanslate section, .frodo-reset section {
+  display: block !important;
+}
+
+/* line 103, src/_cleanslate.scss */
+.cleanslate table, .frodo-reset table {
+  display: table !important;
+}
+
+/* line 106, src/_cleanslate.scss */
+.cleanslate thead, .frodo-reset thead {
+  display: table-header-group !important;
+}
+
+/* line 109, src/_cleanslate.scss */
+.cleanslate tbody, .frodo-reset tbody {
+  display: table-row-group !important;
+}
+
+/* line 112, src/_cleanslate.scss */
+.cleanslate tfoot, .frodo-reset tfoot {
+  display: table-footer-group !important;
+}
+
+/* line 115, src/_cleanslate.scss */
+.cleanslate tr, .frodo-reset tr {
+  display: table-row !important;
+}
+
+/* line 118, src/_cleanslate.scss */
+.cleanslate th, .frodo-reset th, .cleanslate td, .frodo-reset td {
+  display: table-cell !important;
+}
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+/* line 124, src/_cleanslate.scss */
+.cleanslate nav ul, .frodo-reset nav ul, .cleanslate nav ol, .frodo-reset nav ol {
+  list-style-type: none !important;
+}
+
+/* line 127, src/_cleanslate.scss */
+.cleanslate ul, .frodo-reset ul, .cleanslate menu, .frodo-reset menu {
+  list-style-type: disc !important;
+}
+
+/* line 130, src/_cleanslate.scss */
+.cleanslate ol, .frodo-reset ol {
+  list-style-type: decimal !important;
+}
+
+/* line 133, src/_cleanslate.scss */
+.cleanslate ol ul, .frodo-reset ol ul, .cleanslate ul ul, .frodo-reset ul ul, .cleanslate menu ul, .frodo-reset menu ul, .cleanslate ol menu, .frodo-reset ol menu, .cleanslate ul menu, .frodo-reset ul menu, .cleanslate menu menu, .frodo-reset menu menu {
+  list-style-type: circle !important;
+}
+
+/* line 136, src/_cleanslate.scss */
+.cleanslate ol ol ul, .frodo-reset ol ol ul, .cleanslate ol ul ul, .frodo-reset ol ul ul, .cleanslate ol menu ul, .frodo-reset ol menu ul, .cleanslate ol ol menu, .frodo-reset ol ol menu, .cleanslate ol ul menu, .frodo-reset ol ul menu, .cleanslate ol menu menu, .frodo-reset ol menu menu, .cleanslate ul ol ul, .frodo-reset ul ol ul, .cleanslate ul ul ul, .frodo-reset ul ul ul, .cleanslate ul menu ul, .frodo-reset ul menu ul, .cleanslate ul ol menu, .frodo-reset ul ol menu, .cleanslate ul ul menu, .frodo-reset ul ul menu, .cleanslate ul menu menu, .frodo-reset ul menu menu, .cleanslate menu ol ul, .frodo-reset menu ol ul, .cleanslate menu ul ul, .frodo-reset menu ul ul, .cleanslate menu menu ul, .frodo-reset menu menu ul, .cleanslate menu ol menu, .frodo-reset menu ol menu, .cleanslate menu ul menu, .frodo-reset menu ul menu, .cleanslate menu menu menu, .frodo-reset menu menu menu {
+  list-style-type: square !important;
+}
+
+/* line 139, src/_cleanslate.scss */
+.cleanslate li, .frodo-reset li {
+  display: list-item !important;
+  /* Fixes IE7 issue with positioning of nested bullets */
+  min-height: auto !important;
+  min-width: auto !important;
+}
+
+/* line 145, src/_cleanslate.scss */
+.cleanslate strong, .frodo-reset strong {
+  font-weight: bold !important;
+}
+
+/* line 148, src/_cleanslate.scss */
+.cleanslate em, .frodo-reset em {
+  font-style: italic !important;
+}
+
+/* line 151, src/_cleanslate.scss */
+.cleanslate kbd, .frodo-reset kbd, .cleanslate samp, .frodo-reset samp, .cleanslate code, .frodo-reset code {
+  font-family: monospace !important;
+}
+
+/* line 154, src/_cleanslate.scss */
+.cleanslate a, .frodo-reset a, .cleanslate a *, .frodo-reset a *, .cleanslate input[type=submit], .frodo-reset input[type=submit], .cleanslate input[type=radio], .frodo-reset input[type=radio], .cleanslate input[type=checkbox], .frodo-reset input[type=checkbox], .cleanslate select, .frodo-reset select {
+  cursor: pointer !important;
+}
+
+/* line 157, src/_cleanslate.scss */
+.cleanslate a:hover, .frodo-reset a:hover {
+  text-decoration: underline !important;
+}
+
+/* line 160, src/_cleanslate.scss */
+.cleanslate button, .frodo-reset button, .cleanslate input[type=submit], .frodo-reset input[type=submit] {
+  text-align: center !important;
+}
+
+/* line 163, src/_cleanslate.scss */
+.cleanslate input[type=hidden], .frodo-reset input[type=hidden] {
+  display: none !important;
+}
+
+/* line 166, src/_cleanslate.scss */
+.cleanslate abbr[title], .frodo-reset abbr[title], .cleanslate acronym[title], .frodo-reset acronym[title], .cleanslate dfn[title], .frodo-reset dfn[title] {
+  cursor: help !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: dotted !important;
+}
+
+/* line 171, src/_cleanslate.scss */
+.cleanslate ins, .frodo-reset ins {
+  background-color: #ff9 !important;
+  color: black !important;
+}
+
+/* line 175, src/_cleanslate.scss */
+.cleanslate del, .frodo-reset del {
+  text-decoration: line-through !important;
+}
+
+/* line 178, src/_cleanslate.scss */
+.cleanslate blockquote, .frodo-reset blockquote, .cleanslate q, .frodo-reset q {
+  quotes: none !important;
+  /* HTML5 */
+}
+
+/* line 181, src/_cleanslate.scss */
+.cleanslate blockquote:before, .frodo-reset blockquote:before, .cleanslate blockquote:after, .frodo-reset blockquote:after, .cleanslate q:before, .frodo-reset q:before, .cleanslate q:after, .frodo-reset q:after, .cleanslate li:before, .frodo-reset li:before, .cleanslate li:after, .frodo-reset li:after {
+  content: "" !important;
+}
+
+/* line 184, src/_cleanslate.scss */
+.cleanslate input, .frodo-reset input, .cleanslate select, .frodo-reset select {
+  vertical-align: middle !important;
+}
+
+/* line 187, src/_cleanslate.scss */
+.cleanslate select, .frodo-reset select, .cleanslate textarea, .frodo-reset textarea, .cleanslate input, .frodo-reset input {
+  border: 1px solid #ccc !important;
+}
+
+/* line 190, src/_cleanslate.scss */
+.cleanslate table, .frodo-reset table {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+/* line 194, src/_cleanslate.scss */
+.cleanslate hr, .frodo-reset hr {
+  display: block !important;
+  height: 1px !important;
+  border: 0 !important;
+  border-top: 1px solid #ccc !important;
+  margin: 1em 0 !important;
+}
+
+/* line 201, src/_cleanslate.scss */
+.cleanslate *[dir=rtl], .frodo-reset *[dir=rtl] {
+  direction: rtl !important;
+}
+
+/* line 204, src/_cleanslate.scss */
+.cleanslate mark, .frodo-reset mark {
+  background-color: #ff9 !important;
+  color: black !important;
+  font-style: italic !important;
+  font-weight: bold !important;
+}
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+/* line 215, src/_cleanslate.scss */
+.cleanslate, .frodo-reset {
+  font-size: medium !important;
+  line-height: 1 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Times New Roman", Times, serif !important;
+  /* Override this with whatever font-family is required */
+  color: black !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  list-style-type: disc !important;
+}
+
+/*  Container
+  ----------------------------------------------------------------------- */
+/* line 21, src/frodo-theme-basic.scss */
+.frodo-container {
+  background: white;
+  width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/*  Navigation
+  ----------------------------------------------------------------------- */
+/* line 31, src/frodo-theme-basic.scss */
+.frodo-navigation {
+  margin-bottom: 50px;
+}
+
+/*  Headline
+  ----------------------------------------------------------------------- */
+/*  Post
+  ----------------------------------------------------------------------- */
+/* line 47, src/frodo-theme-basic.scss */
+.frodo-post-headline, .frodo-post-headline a {
+  color: #333333;
+}
+
+/* line 53, src/frodo-theme-basic.scss */
+.frodo-post-content p {
+  font: 14px/19px Helvetica, Arial;
+  color: #333333;
+}
+
+/*  Colors
+  ----------------------------------------------------------------------- */
+/* line 62, src/frodo-theme-basic.scss */
+.frodo-color {
+  width: 50px;
+  display: inline-block;
+}
+
+/* line 67, src/frodo-theme-basic.scss */
+.frodo-color-swatch {
+  width: 30px;
+  height: 30px;
+}
+
+/*  Code Snippet
+  ----------------------------------------------------------------------- */
+/* line 75, src/frodo-theme-basic.scss */
+.frodo-snippet {
+  margin-bottom: 40px;
+}
+
+/* line 79, src/frodo-theme-basic.scss */
+.frodo-snippet-example {
+  padding: 5px 0 15px 0;
+}
+
+/* line 83, src/frodo-theme-basic.scss */
+.frodo-snippet-code {
+  background: #eee;
+  padding: 15px;
+}
