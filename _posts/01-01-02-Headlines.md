@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 {% snippet html %}
 <h1>Headline h1</h1>
 <h2>Headline h2</h2>
