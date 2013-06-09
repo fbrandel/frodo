@@ -1,8 +1,19 @@
 <html>
 <head>
-	<title></title>
+	<title>{{ page.title }} - {{ site.title }}</title>
+	<link rel="stylesheet" href="assets/css/frodo-theme-basic.css">
 </head>
 <body>
-	asd{{ content }}
+	<div class="frodo-container">
+		<div class="frodo-navigation">
+			<ol>
+				{% for post in site.posts reversed %}
+					<li><a href="#{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ol>
+		</div>
+		
+		{{ content }}
+	</div>
 </body>
 </html>

@@ -2,23 +2,13 @@
 layout: default
 ---
 
-<div class="frodo-container">
-	<div class="frodo-navigation">
-		<ol>
-			{% for post in site.posts reversed %}
-				<li><a href="#{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ol>
-	</div>
-	
-    <h1 class="frodo-main-headline">{{ site.title }}</h1>
-    <div class="frodo-posts">
-        {% for post in site.posts reversed %}
-            <div id="{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}" class="frodo-post">
-					
-                <h2 class="frodo-post-headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="frodo-post-content">{{ post.content }}</div>
-            </div>
-        {% endfor %}
-    </div>
+<h1 class="frodo-main-headline">{{ site.title }}</h1>
+<div class="frodo-posts">
+    {% for post in site.posts reversed %}
+        <div id="{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}" class="frodo-post">
+				
+            <h2 class="frodo-post-headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="frodo-post-content">{{ post.content }}</div>
+        </div>
+    {% endfor %}
 </div>
