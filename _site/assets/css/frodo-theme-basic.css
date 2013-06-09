@@ -330,7 +330,8 @@
   ----------------------------------------------------------------------- */
 /* line 62, src/frodo-theme-basic.scss */
 .frodo-color {
-  width: 50px;
+  min-width: 50px;
+  margin-left: 5px;
   display: inline-block;
 }
 

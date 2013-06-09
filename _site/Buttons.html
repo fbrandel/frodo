@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Buttons &amp; Links - Styleguide</title>
+	<link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/frodo-theme-basic.css">
 </head>
 <body>
@@ -14,34 +15,108 @@
 				
 					<li><a href="#buttons_&amp;_links">Buttons &amp; Links</a></li>
 				
+					<li><a href="#tables">Tables</a></li>
+				
 			</ol>
 		</div>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro cumque sint adipisci eaque nobis similique vero sed minima sit aliquam explicabo saepe vel ex corporis animi eveniet suscipit incidunt sapiente aliquid deserunt atque illo .</p>
+		<h3 id='default_buttons'>Default Buttons</h3>
 
-<h3 id='standard_buttons'>Standard Buttons</h3>
+<p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you&#8217;ll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
 <div class='frodo-snippet'>
 	<div class='frodo-snippet-example'>
-<input value='Submit Button' type='submit' />
-<button>Button</button>
+<p>
+	<button class='btn'>Default</button>
+</p>
+<p>
+	<button class='btn btn-primary'>Primary</button>
+</p>
+<p>
+	<button class='btn btn-info'>Info</button>
+</p>
+<p>
+	<button class='btn btn-success'>Success</button>
+</p>
+<p>
+	<button class='btn btn-warning'>Warning</button>
+</p>
+<p>
+	<button class='btn btn-danger'>Danger</button>
+</p>
+<p>
+	<button class='btn btn-inverse'>Inverse</button>
+</p>
 </div>
 	<div class='frodo-snippet-code'>
-<div class='highlight'><pre><code class='html'><span class='nt'>&lt;input</span> <span class='na'>type=</span><span class='s'>&quot;submit&quot;</span> <span class='na'>value=</span><span class='s'>&quot;Submit Button&quot;</span> <span class='nt'>/&gt;</span>
-<span class='nt'>&lt;button&gt;</span>Button<span class='nt'>&lt;/button&gt;</span>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn&quot;</span><span class='nt'>&gt;</span>Default<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-primary&quot;</span><span class='nt'>&gt;</span>Primary<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-info&quot;</span><span class='nt'>&gt;</span>Info<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-success&quot;</span><span class='nt'>&gt;</span>Success<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-warning&quot;</span><span class='nt'>&gt;</span>Warning<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-danger&quot;</span><span class='nt'>&gt;</span>Danger<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+	<span class='nt'>&lt;button</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-inverse&quot;</span><span class='nt'>&gt;</span>Inverse<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
 </code></pre>
 </div>
 
 </div>
 </div>
-<h3 id='links'>Links</h3>
+<h4 id='cross_browser_compatibility'>Cross browser compatibility</h4>
+
+<p>IE9 doesn&#8217;t crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+
+<h3 id='button_sizes'>Button Sizes</h3>
+
+<p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
 <div class='frodo-snippet'>
 	<div class='frodo-snippet-example'>
-<p><a class='btn' href=''>Button</a></p>
-<p><a class='btn btn-primary' href=''>Button</a></p>
+<p>
+  <button class='btn btn-large btn-primary' type='button'>Large button</button>
+  <button class='btn btn-large' type='button'>Large button</button>
+</p>
+<p>
+  <button class='btn btn-primary' type='button'>Default button</button>
+  <button class='btn' type='button'>Default button</button>
+</p>
+<p>
+  <button class='btn btn-small btn-primary' type='button'>Small button</button>
+  <button class='btn btn-small' type='button'>Small button</button>
+</p>
+<p>
+  <button class='btn btn-mini btn-primary' type='button'>Mini button</button>
+  <button class='btn btn-mini' type='button'>Mini button</button>
+</p>
 </div>
 	<div class='frodo-snippet-code'>
-<div class='highlight'><pre><code class='html'><span class='nt'>&lt;p&gt;&lt;a</span> <span class='na'>href=</span><span class='s'>&quot;&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn&quot;</span><span class='nt'>&gt;</span>Button<span class='nt'>&lt;/a&gt;&lt;/p&gt;</span>
-<span class='nt'>&lt;p&gt;&lt;a</span> <span class='na'>href=</span><span class='s'>&quot;&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-primary&quot;</span><span class='nt'>&gt;</span>Button<span class='nt'>&lt;/a&gt;&lt;/p&gt;</span>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;p&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-large btn-primary&quot;</span><span class='nt'>&gt;</span>Large button<span class='nt'>&lt;/button&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-large&quot;</span><span class='nt'>&gt;</span>Large button<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-primary&quot;</span><span class='nt'>&gt;</span>Default button<span class='nt'>&lt;/button&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn&quot;</span><span class='nt'>&gt;</span>Default button<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-small btn-primary&quot;</span><span class='nt'>&gt;</span>Small button<span class='nt'>&lt;/button&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-small&quot;</span><span class='nt'>&gt;</span>Small button<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
+<span class='nt'>&lt;p&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-mini btn-primary&quot;</span><span class='nt'>&gt;</span>Mini button<span class='nt'>&lt;/button&gt;</span>
+  <span class='nt'>&lt;button</span> <span class='na'>type=</span><span class='s'>&quot;button&quot;</span> <span class='na'>class=</span><span class='s'>&quot;btn btn-mini&quot;</span><span class='nt'>&gt;</span>Mini button<span class='nt'>&lt;/button&gt;</span>
+<span class='nt'>&lt;/p&gt;</span>
 </code></pre>
 </div>
 
